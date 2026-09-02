@@ -34,7 +34,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
         name: user.name,
       },
       jwtSecret,
-      { expiresIn }
+      { expiresIn: expiresIn as any }
     );
 
     sendSuccess(
