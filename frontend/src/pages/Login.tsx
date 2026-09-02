@@ -26,10 +26,7 @@ export const Login: React.FC = () => {
     }
   };
 
-  const prefill = (e: string, p: string) => {
-    setEmail(e);
-    setPassword(p);
-  };
+
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
@@ -65,7 +62,6 @@ export const Login: React.FC = () => {
               {loading ? 'Signing in...' : 'Sign In'}
             </button>
           </form>
-        </div>
       </div>
     </div>
   );
